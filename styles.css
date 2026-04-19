@@ -1,0 +1,164 @@
+:root {
+  --bg: #f7f5f2;
+  --text: #1c1c1c;
+  --accent: #5c6b65;
+  --meta: #6e6e6e;
+  --border: #dfdbd2;
+  --font-serif: 'Georgia', 'EB Garamond', 'Times New Roman', serif;
+  --font-sans: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+  --font-mono: 'SFMono-Regular', Consolas, 'Liberation Mono', Menlo, monospace;
+}
+
+body {
+  background: var(--bg);
+  color: var(--text);
+  font-family: var(--font-sans);
+  line-height: 1.6;
+  max-width: 650px;
+  margin: 0 auto;
+  padding: 4rem 1.5rem;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+h1, h2, h3, h4 {
+  font-family: var(--font-serif);
+  font-weight: normal;
+  color: var(--text);
+  margin-top: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+h1 {
+  font-size: 2.4rem;
+  letter-spacing: -0.02em;
+  margin-top: 0;
+  margin-bottom: 0.5rem;
+}
+
+h2 {
+  font-size: 1.4rem;
+  border-bottom: 1px solid var(--border);
+  padding-bottom: 0.4rem;
+  margin-bottom: 1.5rem;
+  margin-top: 3.5rem;
+}
+
+h3 {
+  font-size: 1.2rem;
+  margin-bottom: 0.5rem;
+}
+
+p {
+  margin-bottom: 1.4rem;
+  font-size: 1.05rem;
+}
+
+a {
+  color: var(--text);
+  text-decoration: none;
+  border-bottom: 1px dotted var(--accent);
+  transition: all 0.2s ease;
+}
+
+a:hover {
+  color: var(--accent);
+  border-bottom-style: solid;
+}
+
+nav {
+  margin-bottom: 4rem;
+  font-family: var(--font-mono);
+  font-size: 0.9rem;
+  display: flex;
+  gap: 1.5rem;
+  flex-wrap: wrap;
+}
+
+nav a {
+  color: var(--meta);
+  border: none;
+  text-transform: lowercase;
+}
+
+nav a:hover, nav a.active {
+  color: var(--text);
+  border-bottom: 1px dotted var(--text);
+}
+
+ul {
+  padding-left: 1.2rem;
+  margin-bottom: 1.5rem;
+}
+
+li {
+  margin-bottom: 0.5rem;
+  font-size: 1.05rem;
+}
+
+.meta {
+  font-family: var(--font-mono);
+  font-size: 0.9rem;
+  color: var(--meta);
+  margin-top: 0;
+  margin-bottom: 2rem;
+  display: block;
+}
+
+.note-card {
+  border-left: 2px solid var(--border);
+  padding-left: 1.2rem;
+  margin-bottom: 2.5rem;
+}
+
+.note-card a {
+  border: none;
+}
+
+.note-card h3 {
+  margin-top: 0;
+  margin-bottom: 0.4rem;
+  font-family: var(--font-sans);
+  font-weight: 600;
+  font-size: 1.1rem;
+}
+
+.note-card h3 a {
+  color: var(--text);
+}
+
+.note-card h3 a:hover {
+  color: var(--accent);
+}
+
+.note-card p {
+  color: var(--meta);
+  font-size: 1rem;
+  margin-bottom: 0;
+}
+
+blockquote {
+  border-left: 2px solid var(--accent);
+  padding-left: 1.2rem;
+  margin-left: 0;
+  color: var(--meta);
+  font-style: italic;
+  font-size: 1.1rem;
+  margin-bottom: 1.5rem;
+}
+
+footer {
+  margin-top: 6rem;
+  padding-top: 2rem;
+  border-top: 1px solid var(--border);
+  font-family: var(--font-mono);
+  font-size: 0.9rem;
+  color: var(--meta);
+  line-height: 1.8;
+}
+
+@media (max-width: 600px) {
+  body {
+    padding: 2rem 1.2rem;
+  }
+}
